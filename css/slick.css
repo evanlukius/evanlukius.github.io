@@ -1,0 +1,165 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Footer Styling */
+footer.bg-white {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+footer a.text-black {
+  color: #000000; /* Black links */
+  text-decoration: none; /* Remove underline */
+}
+
+footer a.text-black:hover {
+  color: #555555; /* Darker grey on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+footer ul.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul.list-inline-item {
+  margin-right: 10px;
+}
+
+footer i.fab {
+  font-size: 1.5rem; /* Icon size */
+}
+
+footer .row > .col {
+  margin-bottom: 15px;
+}
+
+footer hr {
+  border-top: 1px solid #dddddd;
+}
+
+footer p {
+  margin-bottom: 0;
+}
