@@ -357,7 +357,7 @@ a:focus {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -419,11 +419,11 @@ a:focus {
 }
 
 .furniture_section .box .detail-box .price_box .price_heading span {
-  color: #6bb7be;
+  color: #3D5A23;
 }
 
 .furniture_section .box .detail-box .price_box a {
-  color: #6bb7be;
+  color: #3D5A23;
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -450,17 +450,17 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   color: #ffffff;
   border-radius: 0;
-  border: 1px solid #6bb7be;
+  border: 1px solid #3D5A23;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  color: #6bb7be;
+  color: #3D5A23;
 }
 
 .blog_section .heading_container {
@@ -506,17 +506,17 @@ a:focus {
 .blog_section .box .detail-box a {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   color: #ffffff;
   border-radius: 0;
-  border: 1px solid #6bb7be;
+  border: 1px solid #3D5A23;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .blog_section .box .detail-box a:hover {
   background-color: transparent;
-  color: #6bb7be;
+  color: #3D5A23;
 }
 
 .client_section .heading_container {
@@ -540,7 +540,7 @@ a:focus {
 
 .client_section .box .img-box {
   border-radius: 100%;
-  border: 10px solid #6bb7be;
+  border: 10px solid #3D5A23;
   margin-right: 25px;
   min-width: 175px;
   max-width: 175px;
@@ -574,7 +574,7 @@ a:focus {
 }
 
 .client_section .box .detail-box .name h6 {
-  color: #6bb7be;
+  color: #3D5A23;
   font-size: 20px;
 }
 
@@ -597,7 +597,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center;
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   background-position: center;
   border-radius: 100%;
   margin: 0 2.5px;
@@ -664,17 +664,17 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 55px;
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   color: #ffffff;
   border-radius: 0px;
-  border: 1px solid #6bb7be;
+  border: 1px solid #3D5A23;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .contact_section .form_container button:hover {
   background-color: transparent;
-  color: #6bb7be;
+  color: #3D5A23;
 }
 
 .contact_section .map_container {
@@ -830,17 +830,17 @@ a:focus {
 .info_section .info_form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #6bb7be;
+  background-color: #3D5A23;
   color: #ffffff;
   border-radius: 0px;
-  border: 1px solid #6bb7be;
+  border: 1px solid #3D5A23;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .info_section .info_form button:hover {
   background-color: transparent;
-  color: #6bb7be;
+  color: #3D5A23;
 }
 
 .info_section .info_form .social_box {
@@ -864,8 +864,8 @@ a:focus {
   border-radius: 5px;
   width: 45px;
   height: 45px;
-  border: 1px solid #6bb7be;
-  color: #6bb7be;
+  border: 1px solid #3D5A23;
+  color: #3D5A23;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -1045,6 +1045,65 @@ td {
 .-column1 {
   width: 100%;
 }
+
+.about_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensures video is behind other content */
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.about_section {
+  position: relative;
+  z-index: 1; /* Ensures content is above the video */
+}
+
+.about_section .container {
+  position: relative;
+}
+
+
 
 
 
