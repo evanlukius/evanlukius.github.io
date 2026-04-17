@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moru Doll 🐻 — Shop</title>
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/morudoll/shop.html" />
+  <meta property="og:title" content="Moru Doll Shop 🛍️ — Handmade Bag Charms & Gift Sets" />
+  <meta property="og:description" content="Browse our collection of cute handmade doll bag charms, gift sets, and bundles. Each piece comes in beautiful gift packaging 🎁" />
+  <meta property="og:image" content="https://yourusername.github.io/morudoll/img/524155549_18497574103069351_4495577853453508139_n.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://yourusername.github.io/morudoll/shop.html" />
+  <meta property="twitter:title" content="Moru Doll Shop 🛍️ — Handmade Bag Charms & Gift Sets" />
+  <meta property="twitter:description" content="Browse our collection of cute handmade doll bag charms, gift sets, and bundles. Each piece comes in beautiful gift packaging 🎁" />
+  <meta property="twitter:image" content="https://yourusername.github.io/morudoll/img/524155549_18497574103069351_4495577853453508139_n.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/icon.png" alt="Moru Doll" class="brand-logo-img">
+      <span class="brand-name">Moru Doll</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link cart-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+            <i class="bi bi-bag-heart-fill"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <div class="language-selector">
+            <div id="google_translate_element"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container text-center py-5">
+    <div class="section-tag">Our Collection</div>
+    <h1 class="section-title mt-2">Moru Doll <span class="highlight">Shop 🛍️</span></h1>
+    <p class="section-sub">Each piece is handmade with care and comes in beautiful gift packaging 🎁</p>
+  </div>
+</div>
+
+<!-- SHOP -->
+<section class="shop-section py-5">
+  <div class="container">
+
+    <!-- Filter -->
+    <div class="d-flex justify-content-center gap-2 flex-wrap mb-5" id="filterBtns">
+      <button class="btn filter-btn active" data-filter="all">All</button>
+      <button class="btn filter-btn" data-filter="bag-charm">Bag Charms</button>
+      <button class="btn filter-btn" data-filter="gift-set">Gift Sets</button>
+      <button class="btn filter-btn" data-filter="bundle">Bundles</button>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bag-charm">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/524155549_18497574103069351_4495577853453508139_n.jpg" class="product-img" alt="Cozy Vest Bunny Charm" />
+            <div class="product-badge">Best Seller</div>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bag Charm</div>
+            <h5 class="product-name">Cozy Vest Bunny Charm</h5>
+            <p class="product-desc">Fluffy bunny doll with gingham bow + egg keychain</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 49.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Cozy Vest Bunny Charm', 49000, '🐰')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bag-charm">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/657375633_18547143133069351_3309668879689590099_n.jpg" class="product-img" alt="Sweet Pink Girl Charm" />
+            <div class="product-badge new-badge">New</div>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bag Charm</div>
+            <h5 class="product-name">Sweet Pink Girl Charm</h5>
+            <p class="product-desc">Pink bunny doll with red gingham bow + pink egg</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 49.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Sweet Pink Girl Charm', 49000, '🩷')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bundle">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/660857800_18549042625069351_6564943544564727977_n.jpg" class="product-img" alt="Moru Cat Flower Bundle" />
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bundle</div>
+            <h5 class="product-name">Moru Cat Flower Bundle</h5>
+            <p class="product-desc">Moru Cat + Vest Flower + Bookmark in gift box</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 49.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Moru Cat Flower Bundle', 49000, '🌸')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="gift-set">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/642252579_18541529248069351_6535748433559493788_n.jpg" class="product-img" alt="Lavender Bag Charm Set" />
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Gift Set</div>
+            <h5 class="product-name">Lavender Bag Charm Set</h5>
+            <p class="product-desc">Bear doll + egg charm on lavender croco bag</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 65.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Lavender Bag Charm Set', 65000, '💜')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="gift-set">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/658188555_18548157154069351_3033026096958246653_n.jpg" class="product-img" alt="Moru Gift Box Set" />
+            <div class="product-badge">Popular</div>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Gift Set</div>
+            <h5 class="product-name">Moru Gift Box Set</h5>
+            <p class="product-desc">Complete gift box with doll + accessories + ribbon</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 75.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Moru Gift Box Set', 75000, '🎁')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bag-charm">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/656067581_18547143142069351_4206704513716024411_n.jpg" class="product-img" alt="Classic Bear Charm" />
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bag Charm</div>
+            <h5 class="product-name">Classic Bear Charm</h5>
+            <p class="product-desc">Cream fluffy bear with gingham bow tie keychain</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 35.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Classic Bear Charm', 35000, '🧸')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bundle">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/657737655_18548157190069351_5478676967661710547_n.jpg" class="product-img" alt="Pink Bow Bundle" />
+            <div class="product-badge new-badge">New</div>
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bundle</div>
+            <h5 class="product-name">Pink Bow Bundle</h5>
+            <p class="product-desc">Pink bunny + egg charm + extra bow accessories</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 59.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Pink Bow Bundle', 59000, '🎀')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="gift-set">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/658424748_18548157145069351_8532325367452933063_n.jpg" class="product-img" alt="Spring Blossom Set" />
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Gift Set</div>
+            <h5 class="product-name">Spring Blossom Set</h5>
+            <p class="product-desc">Seasonal limited edition spring-themed gift set</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 85.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Spring Blossom Set', 85000, '🌷')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-6 col-md-4 col-lg-3 product-item" data-category="bag-charm">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="img/660115667_18548157187069351_5010242462786412416_n.jpg" class="product-img" alt="Bunny Egg Keychain" />
+            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-cat">Bag Charm</div>
+            <h5 class="product-name">Bunny Egg Keychain</h5>
+            <p class="product-desc">Cute egg-shaped bunny keychain with gingham ribbon</p>
+            <div class="d-flex align-items-center justify-content-between mt-2">
+              <div class="product-price">Rp 29.000</div>
+              <button class="btn btn-add-cart" onclick="addToCart('Bunny Egg Keychain', 29000, '🥚')">
+                <i class="bi bi-bag-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container text-center py-4">
+    <div class="footer-brand"><img src="img/icon.png" alt="Moru Doll" class="footer-logo-img"> Moru Doll</div>
+    <p class="footer-tagline">Handmade with love from Bandung 🌸</p>
+    <div class="footer-links d-flex justify-content-center gap-4 flex-wrap">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy mt-3">© 2025 Moru Doll. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- CART OFFCANVAS -->
+<div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><i class="bi bi-bag-heart-fill me-2"></i>Your Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1">
+      <div class="empty-cart text-center py-5" id="emptyCart">
+        <div style="font-size:3rem;">🛍️</div>
+        <p class="mt-2 text-muted">Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="d-flex justify-content-between mb-3">
+        <strong>Total</strong>
+        <strong id="cartTotal">Rp 0</strong>
+      </div>
+      <a href="#" target="_blank" class="btn btn-checkout w-100" id="waCheckout">
+        <i class="bi bi-whatsapp me-2"></i>Order via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body" id="toastMsg">Added to cart! 🛍️</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,id',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="script.js"></script>
+</body>
+</html>

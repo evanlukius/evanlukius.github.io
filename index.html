@@ -1,592 +1,224 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <link rel="icon" href="images/oqsz-removebg-preview.png" type="image/gif" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Kyosui Inc</title>
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
-
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moru Doll 🐻 — Home</title>
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/morudoll/" />
+  <meta property="og:title" content="Moru Doll 🐻 — Handmade Doll Bag Charms & Gift Sets" />
+  <meta property="og:description" content="Cute handmade doll bag charms & gift sets made just for you 🐰🧸 | Bandung, Indonesia" />
+  <meta property="og:image" content="https://yourusername.github.io/morudoll/img/model1.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://yourusername.github.io/morudoll/" />
+  <meta property="twitter:title" content="Moru Doll 🐻 — Handmade Doll Bag Charms & Gift Sets" />
+  <meta property="twitter:description" content="Cute handmade doll bag charms & gift sets made just for you 🐰🧸 | Bandung, Indonesia" />
+  <meta property="twitter:image" content="https://yourusername.github.io/morudoll/img/model1.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section long_section px-0 sticky-header">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            <img src="images/oqsz-removebg-preview.png" alt="Kyosui" width="150">
-          </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex flex-column flex-lg-row align-items-center">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    
-<!--         <div class="quote_btn-container">
-          <a href="login.html" class="login_btn">
-            <span>Login</span>
-            <i class="fa fa-user" aria-hidden="true"></i>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/icon.png" alt="Moru Doll" class="brand-logo-img">
+      <span class="brand-name">Moru Doll</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link cart-btn" href="shop.html#cart" onclick="openCart(event)">
+            <i class="bi bi-bag-heart-fill"></i>
+            <span class="cart-count" id="cartCount">0</span>
           </a>
-          <form class="form-inline" action="#" method="get">
-            <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </form>
-        </div> -->
-      </nav>
-    </header>
-    
-    
-    <section class="slider_section long_section">
-      <div id="customCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="detail-box">
-                    <h1>
-                      Kyosui For All Your 
-                      Needs
-                    </h1>
-                    <p>
-                      At Kyosui Inc, we take pride in producing Kujo leeks using organic compost and sustainable methods to minimize pesticide use. Our leeks are carefully washed without hypochlorite, preserving their natural flavor and texture. We provide a variety of cut leeks suitable for retail and restaurants, all sourced from nearby fields to ensure maximum freshness. Additionally, we specialize in processing seasonal Kyoto vegetables.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="img-box">
-                    <img src="images/sign.png" alt="Kyosui Brand Sign" class="img-fluid" width="150">
-                  </div>                  
-                </div>
-              </div>
-            </div>
+        </li>
+        <li class="nav-item">
+          <div class="language-selector">
+            <div id="google_translate_element"></div>
           </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="detail-box">
-                    <h1>
-                      Ensuring Safe and High-Quality Green Onion Production with HACCP
-                    </h1>
-                    <p>
-                      At Kyosui, we are committed to producing high-quality green onions by adhering to the stringent standards of Hazard Analysis and Critical Control Points (HACCP). This internationally recognized system ensures the safety and integrity of our products by identifying potential hazards and implementing effective control measures throughout the production process. From cultivation to packaging, we prioritize rigorous monitoring and hygiene practices to deliver green onions that meet the highest safety and quality standards, providing our customers with a product they can trust.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="img-box">
-                    <img src="images/haccp.jpg" alt="Kyosui Brand Sign" class="img-fluid" width="150">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="detail-box">
-                    <h1>
-                      Food Safety System Certification (FSSC) 22000
-                    </h1>
-                    <p>
-                      Kyosui is proud to have achieved the prestigious Food Safety System Certification (FSSC) 22000. This internationally recognized certification underscores our commitment to the highest standards of food safety, ensuring that we consistently deliver products that meet the strictest quality and safety requirements. With FSSC 22000 certification, Kyosui continues to prioritize consumer safety and food quality, maintaining transparency, accountability, and excellence throughout our operations.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contact Us
-                      </a>
-                      <a href="" class="btn2">
-                        About Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="img-box">
-                    <img src="images/1705137629366.png" alt="Kyosui Brand Sign" class="img-fluid" width="150">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ol class="carousel-indicators">
-          <li data-target="#customCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel" data-slide-to="1"></li>
-          <li data-target="#customCarousel" data-slide-to="2"></li>
-        </ol>
-      </div>
-    </section>
-    <!-- end slider section -->
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
 
-  <!-- furniture section -->
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg-decor">
+    <span class="bow bow1">🐻</span>
+    <span class="bow bow2">🐰</span>
+    <span class="bow bow3">🎀</span>
+    <span class="bow bow4">🎀</span>
+  </div>
+  <div class="container text-center py-5">
+    <div class="hero-badge mb-3">✨ Handmade with love ✨</div>
+    <h1 class="hero-title">Moru Doll</h1>
+    <p class="hero-subtitle">Cute handmade doll bag charms & gift sets<br>made just for you 🐰🧸</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+      <a href="shop.html" class="btn btn-hero-primary">Shop Now 🛍️</a>
+      <a href="workshop.html" class="btn btn-hero-outline">Join Workshop 🏠</a>
+    </div>
+    <div class="hero-stats d-flex justify-content-center gap-5 mt-5">
+      <div class="stat-item">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Handmade</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">⭐ 5.0</div>
+        <div class="stat-label">Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section class="furniture_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Products
-        </h2>
-        <p>
-          Discover the versatility of Kyoto-grown Kujo green onions, perfect for any dish. From finely sliced condiments to customizable chopped options, white leek garnishes, and hearty cuts for hot pots, we offer flavors that suit every culinary need. For a crisp, chewy texture, try our diagonally sliced cups. Bulk options are also available for larger needs. Quality and flavor in every bite!
+<!-- ABOUT -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 text-center">
+        <div class="about-img-wrap">
+          <div class="about-img-circle">
+            <img src="img/icon.png" alt="Moru Doll" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; filter: brightness(0) saturate(100%) invert(64%) sepia(48%) saturate(1000%) hue-rotate(310deg) brightness(100%) contrast(101%);">
+          </div>
+          <div class="about-badge-float">Bandung, Indonesia 📍</div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">Hi, We're <span class="highlight">Moru Doll!</span></h2>
+        <p class="about-text mt-3">
+          We're a small home-based workshop in Bandung that creates adorable handmade doll bag charms and gift sets. Every piece is crafted with love — from fluffy bunny dolls to cute egg-shaped accessories — perfect as gifts, bag decorations, or just to brighten your day! 🌸
         </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/712GQqLKdWL._AC_SX679_.jpg" alt="">
+        <div class="row g-3 mt-2">
+          <div class="col-6">
+            <div class="feature-card">
+              <span class="feature-icon">🎀</span>
+              <div class="feature-text">Handmade & Unique</div>
             </div>
-            <div class="detail-box">
-              <h5>
-                Kyoto Prefecture Kujo Green Onions, Roughly Chopped, 1 Pack, 150g
-              </h5>
-              <div class="price_box">
-                <h6 class="price_heading">
-                  <span>¥</span> 216 
-                </h6>
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
+          </div>
+          <div class="col-6">
+            <div class="feature-card">
+              <span class="feature-icon">📦</span>
+              <div class="feature-text">Gift-Ready Packaging</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="feature-card">
+              <span class="feature-icon">🎨</span>
+              <div class="feature-text">Custom Orders</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="feature-card">
+              <span class="feature-icon">🚗</span>
+              <div class="feature-text">We Come to You</div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/71I5h9851JL._AC_SX679_.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Kyoto Prefecture Kujo Green Onions, Sliced, 1 Pack, 100g
-              </h5>
-              <div class="price_box">
-                <h6 class="price_heading">
-                  <span>¥</span> 216
-                </h6>
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/71I5h9851JL._AC_SX679_.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Kyoto Prefecture Kujo Green Onions, Sliced, 1 Pack, 100g
-              </h5>
-              <div class="price_box">
-                <h6 class="price_heading">
-                  <span>¥</span> 216
-                </h6>
-                <a href="">
-                  Buy Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+        <a href="shop.html" class="btn btn-hero-primary mt-4">Browse Products 🛍️</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- end furniture section -->
-
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding long_section">
-    <div class="video-background">
-      <video autoplay muted loop playsinline>
-        <source src="video/7261515-hd_1920_1080_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+<!-- TESTIMONIALS -->
+<section class="testimonial-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-tag">Reviews</div>
+      <h2 class="section-title">What Customers <span class="highlight">Say 💬</span></h2>
     </div>
-    <div class="container">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                What is Kujo Negi?
-              </h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"So cute and well-made! The packaging is beautiful, perfect as a gift. Will definitely order again!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <strong>Aulia R.</strong>
+              <div class="testi-loc">Bandung</div>
             </div>
-            <p>
-              Kujo negi" refers to a kind of long green onion (leek) representing Japan. It is said that the original species was a natural leek originally unplanted in Nanba, and then it was introduced to Kyoto Prefecture
-            </p>
-            <a href="">
-              Read More
-            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <br>
-  
-  
-
-  <!-- end about section -->
-
-  <!-- blog section -->
-
-  <!-- <section class="blog_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Latest Blog
-        </h2>
+      <div class="col-md-4">
+        <div class="testi-card featured-testi">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Joined the home workshop for my daughter's birthday — everyone loved it! The instructor was so patient and fun."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div>
+              <strong>Sari M.</strong>
+              <div class="testi-loc">Bandung</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Look even slightly believable. If you are
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Anything embarrassing hidden in the middle
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b3.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Molestias magni natus dolores odio commodi. Quaerat!
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"The Sweet Pink Girl charm is adorable! My bag looks so much cuter now. Fast shipping too!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">D</div>
+            <div>
+              <strong>Dinda P.</strong>
+              <div class="testi-loc">Jakarta</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </div>
+</section>
 
-  <!-- end blog section -->
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      <h6>
-                        Evan Agustian Lukius
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      <h6>
-                        Siaalya
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="carousel_btn-container">
-          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container text-center py-4">
+    <div class="footer-brand"><img src="img/icon.png" alt="Moru Doll" class="footer-logo-img"> Moru Doll</div>
+    <p class="footer-tagline">Handmade with love from Bandung 🌸</p>
+    <div class="footer-links d-flex justify-content-center gap-4 flex-wrap">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </section>
+    <div class="footer-copy mt-3">© 2026 Moru Doll. All rights reserved.</div>
+  </div>
+</footer>
 
-  <!-- end client section -->
-
-  <!-- contact section -->
-  <section class="contact_section long_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2 class="contact_heading">
-                Contact Us
-              </h2>
-            </div>
-            <form action="">
-              <div>
-                <input type="text" class="form_input" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form_input" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form_input" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="form_input message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button class="btn_send">
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <!-- Embed Google Map -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.842312959767!2d135.748464!3d34.9856629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108b5c8e4f8d3%3A0xa0a34bfb9103c2b4!2sKyoto%20Head%20Office%20Factory!5e0!3m2!1sen!2sjp!4v1691708317748!5m2!1sen!2sjp"
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-              </iframe>
-            </div>
-          </div>
-        </div>        
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- end contact section -->
-
-  <!-- info section -->
-
-    <footer class="bg-white text-black pt-4">
-      <div class="container">
-        <div class="row">
-          <!-- Column 1: Policies -->
-          <div class="col-md-3 mb-3">
-            <h5>Policies</h5>
-            <ul class="list-unstyled">
-              <li><a href="" target="_blank" class="text-black">Terms &amp; Conditions</a></li>
-              <li><a href="" target="_blank" class="text-black">Privacy Policy</a></li>
-              <li><a href="" target="_blank" class="text-black">Shipping Policy</a></li>
-              <li><a href="" target="_blank" class="text-black">Refund Policy</a></li>
-            </ul>
-          </div>
-    
-          <!-- Column 2: Additional Information -->
-          <div class="col-md-3 mb-3">
-            <h5>Information</h5>
-            <ul class="list-unstyled">
-              <li><a href="" target="_blank" class="text-black">Cookie Policy</a></li>
-              <li><a href="" target="_blank" class="text-black">FAQ</a></li>
-              <li><a href="" target="_blank" class="text-black">Payment Methods</a></li>
-            </ul>
-          </div>
-    
-          <!-- Column 3: Address -->
-          <div class="col-md-3 mb-3">
-            <h5>Address</h5>
-            <p>
-              Kyosui Co., Ltd.<br>
-              Kyoto Head Office Factory,<br>
-              60 Kisshoinjima Kashiyama-cho,<br>
-              Minami-ku, Kyoto, Kyoto Prefecture
-            </p>
-          </div>
-    
-          <!-- Column 4: Contact and Social Links -->
-          <div class="col-md-3 mb-3">
-            <h5>Contact</h5>
-            <p>Phone: 075-634-8263<br>Fax: 075-634-8122</p>
-            <h5>Follow Us</h5>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" class="text-black"><i class="fab fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.instagram.com/" target="_blank" class="text-black"><i class="fab fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.twitter.com/" target="_blank" class="text-black"><i class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="https://www.tiktok.com/" target="_blank" class="text-black"><i class="fab fa-tiktok"></i></a></li>
-            </ul>
-          </div>
-        </div>
-    
-        <hr>
-    
-        <!-- Footer Bottom -->
-        <div class="row">
-          <div class="col text-center">
-            <p class="mb-0 text-black">&copy; 2024 by Kyosui Inc. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    <!-- Include Bootstrap CSS and FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet">
-    
-  <!-- end info_section -->
-
-
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,id',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    multilanguagePage: true
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
