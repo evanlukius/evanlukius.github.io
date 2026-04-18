@@ -3,222 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moru Doll 🐻 — Home</title>
-  <link rel="icon" type="image/png" href="img/icon.png" />
-  
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="Moru Doll 🐻 — Handmade Doll Bag Charms & Gift Sets">
-  <meta name="description" content="Cute handmade doll bag charms & gift sets made just for you 🐰🧸 | Bandung, Indonesia">
-  
-  <!-- Open Graph / Facebook / WhatsApp -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://evanlukius.github.io/" />
-  <meta property="og:title" content="Moru Doll 🐻 — Handmade Doll Bag Charms & Gift Sets" />
-  <meta property="og:description" content="Cute handmade doll bag charms & gift sets made just for you 🐰🧸 | Bandung, Indonesia" />
-  <meta property="og:image" content="https://evanlukius.github.io/img/social-thumbnail.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:site_name" content="Moru Doll" />
-  <meta property="og:locale" content="en_US" />
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://evanlukius.github.io/" />
-  <meta property="twitter:title" content="Moru Doll 🐻 — Handmade Doll Bag Charms & Gift Sets" />
-  <meta property="twitter:description" content="Cute handmade doll bag charms & gift sets made just for you 🐰🧸 | Bandung, Indonesia" />
-  <meta property="twitter:image" content="https://evanlukius.github.io/img/social-thumbnail.jpg" />
-  <meta property="twitter:creator" content="@morudolldotcom" />
-  
-  <!-- Additional Meta Tags for Better SEO -->
-  <meta name="keywords" content="handmade dolls, bag charms, gift sets, Bandung, Indonesia, cute accessories, bunny dolls, bear charms">
-  <meta name="author" content="Moru Doll">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://evanlukius.github.io/" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <title>Evan Agustian Lukius | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img src="img/icon.png" alt="Moru Doll" class="brand-logo-img">
-      <span class="brand-name">Moru Doll</span>
-    </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto gap-1">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item">
-          <a class="nav-link cart-btn" href="shop.html#cart" onclick="openCart(event)">
-            <i class="bi bi-bag-heart-fill"></i>
-            <span class="cart-count" id="cartCount">0</span>
-          </a>
-        </li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Evan Lukius</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section class="hero-section">
-  <div class="hero-bg-decor">
-    <span class="bow bow1">🐻</span>
-    <span class="bow bow2">🐰</span>
-    <span class="bow bow3">🎀</span>
-    <span class="bow bow4">🎀</span>
-  </div>
-  <div class="container text-center py-5">
-    <div class="hero-badge mb-3">✨ Handmade with love ✨</div>
-    <h1 class="hero-title">Moru Doll</h1>
-    <p class="hero-subtitle">Cute handmade doll bag charms & gift sets<br>made just for you 🐰🧸</p>
-    <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
-      <a href="shop.html" class="btn btn-hero-primary">Shop Now 🛍️</a>
-      <a href="workshop.html" class="btn btn-hero-outline">Join Workshop 🏠</a>
-    </div>
-    <div class="hero-stats d-flex justify-content-center gap-5 mt-5">
-      <div class="stat-item">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Happy Customers</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Handmade</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">⭐ 5.0</div>
-        <div class="stat-label">Rating</div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center" id="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
-<!-- ABOUT -->
-<section class="about-section py-5">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-5 text-center">
-        <div class="about-img-wrap">
-          <div class="about-img-circle">
-            <img src="img/icon.png" alt="Moru Doll" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; filter: brightness(0) saturate(100%) invert(64%) sepia(48%) saturate(1000%) hue-rotate(310deg) brightness(100%) contrast(101%);">
-          </div>
-          <div class="about-badge-float">Bandung, Indonesia 📍</div>
-        </div>
-      </div>
-      <div class="col-lg-7">
-        <div class="section-tag">About Us</div>
-        <h2 class="section-title">Hi, We're <span class="highlight">Moru Doll!</span></h2>
-        <p class="about-text mt-3">
-          We're a small home-based workshop in Bandung that creates adorable handmade doll bag charms and gift sets. Every piece is crafted with love — from fluffy bunny dolls to cute egg-shaped accessories — perfect as gifts, bag decorations, or just to brighten your day! 🌸
-        </p>
-        <div class="row g-3 mt-2">
-          <div class="col-6">
-            <div class="feature-card">
-              <span class="feature-icon">🎀</span>
-              <div class="feature-text">Handmade & Unique</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card">
-              <span class="feature-icon">📦</span>
-              <div class="feature-text">Gift-Ready Packaging</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card">
-              <span class="feature-icon">🎨</span>
-              <div class="feature-text">Custom Orders</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card">
-              <span class="feature-icon">🚗</span>
-              <div class="feature-text">We Come to You</div>
+        <!-- Photo -->
+        <div class="col-lg-5 text-center">
+          <div class="hero-photo-wrap mx-auto">
+            <img src="images/4x6.jpg" alt="Evan Agustian Lukius" class="hero-photo-rect"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero-photo-fallback" style="display:none;">
+              <span>EAL</span>
             </div>
           </div>
         </div>
-        <a href="shop.html" class="btn btn-hero-primary mt-4">Browse Products 🛍️</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonial-section py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <div class="section-tag">Reviews</div>
-      <h2 class="section-title">What Customers <span class="highlight">Say 💬</span></h2>
+        <!-- Text -->
+        <div class="col-lg-7 text-white">
+          <p class="hero-eyebrow animate-fade-in">Hello, I'm</p>
+          <h1 class="hero-name fw-bold animate-fade-in">Evan Agustian Lukius</h1>
+          <p class="hero-role animate-fade-in-delay">
+            IT Graduate &nbsp;&bull;&nbsp; Web Developer &nbsp;&bull;&nbsp; Cloud Computing Enthusiast
+          </p>
+          <p class="hero-location animate-fade-in-delay">
+            <i class="bi bi-geo-alt-fill me-1"></i>Indonesia &nbsp;·&nbsp; International Experience in Japan, Taiwan & South Korea
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap animate-fade-in-delay2 mt-4">
+            <a href="about.html" class="btn btn-light btn-lg px-4 fw-semibold">About Me</a>
+            <a href="experience.html" class="btn btn-outline-light btn-lg px-4">My Experience</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
+          </div>
+
+          <div class="hero-socials mt-4">
+            <a href="mailto:lukiusevanagustian@gmail.com" class="social-icon" title="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://linkedin.com/in/evanlukius" target="_blank" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="tel:+6282144750752" class="social-icon" title="Phone"><i class="bi bi-telephone-fill"></i></a>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p>"So cute and well-made! The packaging is beautiful, perfect as a gift. Will definitely order again!"</p>
-          <div class="testi-author">
-            <div class="testi-avatar">A</div>
-            <div>
-              <strong>Aulia R.</strong>
-              <div class="testi-loc">Bandung</div>
-            </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="stats-section py-5 bg-white">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat-card p-4">
+            <i class="bi bi-mortarboard-fill stat-icon mb-2"></i>
+            <div class="stat-number">3.68</div>
+            <div class="stat-label">GPA / 4.0</div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testi-card featured-testi">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p>"Joined the home workshop for my daughter's birthday — everyone loved it! The instructor was so patient and fun."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">S</div>
-            <div>
-              <strong>Sari M.</strong>
-              <div class="testi-loc">Bandung</div>
-            </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card p-4">
+            <i class="bi bi-briefcase-fill stat-icon mb-2"></i>
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p>"The Sweet Pink Girl charm is adorable! My bag looks so much cuter now. Fast shipping too!"</p>
-          <div class="testi-author">
-            <div class="testi-avatar">D</div>
-            <div>
-              <strong>Dinda P.</strong>
-              <div class="testi-loc">Jakarta</div>
-            </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card p-4">
+            <i class="bi bi-globe2 stat-icon mb-2"></i>
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Countries Engaged</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card p-4">
+            <i class="bi bi-rocket-takeoff-fill stat-icon mb-2"></i>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Projects & Events</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer-section">
-  <div class="container text-center py-4">
-    <div class="footer-brand"><img src="img/icon.png" alt="Moru Doll" class="footer-logo-img"> Moru Doll</div>
-    <p class="footer-tagline">Handmade with love from Bandung 🌸</p>
-    <div class="footer-links d-flex justify-content-center gap-4 flex-wrap">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="workshop.html">Workshop</a>
-      <a href="contact.html">Contact</a>
+  <!-- About Snapshot -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <div class="about-snap-photo mx-auto mx-lg-0">
+            <img src="images/4x6.jpg" alt="Evan Agustian Lukius" />
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <span class="section-eyebrow">WHO I AM</span>
+          <h2 class="fw-bold mt-2 mb-4" style="font-size:1.9rem;">A Global IT Professional with a Passion for Digital Transformation</h2>
+          <p class="text-muted lh-lg mb-3">
+            I'm an IT graduate from Maranatha Christian University (GPA 3.68) with hands-on international experience across Japan, Taiwan, and South Korea. I combine strong technical skills in web development, cloud computing, and data analysis with a multicultural perspective built through years of cross-border collaboration.
+          </p>
+          <p class="text-muted lh-lg mb-4">
+            From building websites in Kyoto to managing cloud infrastructure for AI-powered products, I bring both depth and adaptability to every project.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="about-snap-item">
+                <i class="bi bi-globe2"></i>
+                <div>
+                  <div class="fw-semibold small">Global Experience</div>
+                  <div class="text-muted" style="font-size:0.78rem;">Japan · Taiwan · South Korea</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-snap-item">
+                <i class="bi bi-cloud-fill"></i>
+                <div>
+                  <div class="fw-semibold small">Cloud Computing</div>
+                  <div class="text-muted" style="font-size:0.78rem;">GCP · Bangkit Academy</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-snap-item">
+                <i class="bi bi-code-slash"></i>
+                <div>
+                  <div class="fw-semibold small">Web Development</div>
+                  <div class="text-muted" style="font-size:0.78rem;">PHP · ReactJS · Laravel</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-snap-item">
+                <i class="bi bi-translate"></i>
+                <div>
+                  <div class="fw-semibold small">Multilingual</div>
+                  <div class="text-muted" style="font-size:0.78rem;">ID · EN · Japanese N4/N3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary px-4">Learn More About Me</a>
+        </div>
+      </div>
     </div>
-    <div class="footer-copy mt-3">© 2026 Moru Doll. All rights reserved.</div>
-  </div>
-</footer>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <!-- Skills Snapshot -->
+  <section class="skills-snapshot py-5 bg-white">
+    <div class="container">
+      <span class="section-eyebrow text-center d-block">WHAT I BRING</span>
+      <h2 class="section-title text-center mt-2 mb-5">Skills & Competencies</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <span class="skill-badge"><i class="bi bi-database me-1"></i>SQL</span>
+        <span class="skill-badge"><i class="bi bi-cloud me-1"></i>Cloud Computing (GCP)</span>
+        <span class="skill-badge"><i class="bi bi-filetype-php me-1"></i>PHP</span>
+        <span class="skill-badge"><i class="bi bi-filetype-jsx me-1"></i>ReactJS</span>
+        <span class="skill-badge"><i class="bi bi-filetype-py me-1"></i>Python (OOP)</span>
+        <span class="skill-badge"><i class="bi bi-bar-chart me-1"></i>Data Analysis</span>
+        <span class="skill-badge"><i class="bi bi-shield-check me-1"></i>Quality Control</span>
+        <span class="skill-badge"><i class="bi bi-diagram-3 me-1"></i>ERP Systems</span>
+        <span class="skill-badge"><i class="bi bi-microsoft me-1"></i>Microsoft Office</span>
+        <span class="skill-badge"><i class="bi bi-chat-dots me-1"></i>English (Professional)</span>
+        <span class="skill-badge"><i class="bi bi-chat-dots me-1"></i>Japanese (N4/N3)</span>
+        <span class="skill-badge"><i class="bi bi-people me-1"></i>Team Collaboration</span>
+        <span class="skill-badge"><i class="bi bi-lightbulb me-1"></i>Business Process Improvement</span>
+        <span class="skill-badge"><i class="bi bi-search me-1"></i>Analytical Thinking</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Experience -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <span class="section-eyebrow text-center d-block">CAREER HIGHLIGHTS</span>
+      <h2 class="section-title text-center mt-2 mb-5">Featured Experience</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feat-exp-card p-4 h-100">
+            <div class="feat-exp-logo mb-3"><i class="bi bi-building"></i></div>
+            <span class="feat-exp-date">Sep 2025 – Jan 2026</span>
+            <h5 class="fw-bold mt-2 mb-1">Institutional & Corporate Relations Intern</h5>
+            <p class="text-primary fw-semibold small mb-2">Maranatha Christian University</p>
+            <p class="text-muted small">Managed 100% accurate cooperation agreement databases and facilitated cross-directorate communication, reducing delays by ~25%.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feat-exp-card p-4 h-100 featured">
+            <div class="feat-exp-logo mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+            <span class="feat-exp-date">Oct 2024 – Jul 2025</span>
+            <h5 class="fw-bold mt-2 mb-1">Quality Management Trainee</h5>
+            <p class="text-primary fw-semibold small mb-2">Kyosui Co., Ltd. — Kyoto, Japan</p>
+            <p class="text-muted small mb-2">Developed the company e-commerce website (Laravel), participated in Chushin Business Fair 2024, and reduced product defects by 15%.</p>
+            <a href="https://github.com/evanlukius/KysouiEcommerce" target="_blank" class="btn btn-sm btn-outline-dark mt-1">
+              <i class="bi bi-github me-1"></i>View Project
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feat-exp-card p-4 h-100">
+            <div class="feat-exp-logo mb-3"><i class="bi bi-laptop"></i></div>
+            <span class="feat-exp-date">Mar 2023 – Mar 2025</span>
+            <h5 class="fw-bold mt-2 mb-1">Web Administrator</h5>
+            <p class="text-primary fw-semibold small mb-2">Maranatha Christian University</p>
+            <p class="text-muted small mb-2">Maintained 99.9% uptime, reduced page load times by 25%, and grew user engagement by 35% through content and performance management.</p>
+          </div>
+        </div>
+      </div>
+      <!-- KopAI GitHub CTA -->
+      <div class="row g-4 mt-0">
+        <div class="col-12">
+          <div class="kopai-cta p-4 d-flex align-items-center gap-4 flex-wrap">
+            <div class="kopai-cta-icon flex-shrink-0"><i class="bi bi-cup-hot-fill"></i></div>
+            <div class="flex-grow-1">
+              <h6 class="fw-bold mb-1">KopAI — Bangkit Capstone Project</h6>
+              <p class="text-muted small mb-0">AI-powered coffee business server built with Node.js, Hapi.js & Google Gemini AI, deployed on GCP. Co-developed during Bangkit Academy 2024.</p>
+            </div>
+            <a href="https://github.com/kopiai/kopai-server" target="_blank" class="btn btn-dark btn-sm flex-shrink-0">
+              <i class="bi bi-github me-2"></i>View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="experience.html" class="btn btn-outline-primary px-4">View Full Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section py-5 text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Let's Work Together</h2>
+      <p class="mb-4 opacity-75">Open to consulting, digital transformation, web development, and global business opportunities.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contact.html" class="btn btn-light btn-lg px-5 fw-semibold">Get In Touch</a>
+        <a href="https://linkedin.com/in/evanlukius" target="_blank" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 text-center text-white">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="mailto:lukiusevanagustian@gmail.com" class="footer-link"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://linkedin.com/in/evanlukius" target="_blank" class="footer-link"><i class="bi bi-linkedin"></i></a>
+        <a href="tel:+6282144750752" class="footer-link"><i class="bi bi-telephone-fill"></i></a>
+      </div>
+      <p class="mb-1">&copy; 2026 Evan Agustian Lukius. All rights reserved.</p>
+      <small class="opacity-50">Built with Bootstrap 5</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

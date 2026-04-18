@@ -3,241 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moru Doll 🐻 — Contact</title>
-  <link rel="icon" type="image/png" href="img/icon.png" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://evanlukius.github.io/contact.html" />
-  <meta property="og:title" content="Contact Moru Doll 💌 — Get In Touch" />
-  <meta property="og:description" content="We'd love to hear from you — orders, questions, or just to say hi! 🐻 WhatsApp: 0817-1712-1267" />
-  <meta property="og:image" content="https://evanlukius.github.io/img/social-thumbnail.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:site_name" content="Moru Doll" />
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://evanlukius.github.io/contact.html" />
-  <meta property="twitter:title" content="Contact Moru Doll 💌 — Get In Touch" />
-  <meta property="twitter:description" content="We'd love to hear from you — orders, questions, or just to say hi! 🐻 WhatsApp: 0817-1712-1267" />
-  <meta property="twitter:image" content="https://evanlukius.github.io/img/social-thumbnail.jpg" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <title>Contact | Evan Agustian Lukius</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img src="img/icon.png" alt="Moru Doll" class="brand-logo-img">
-      <span class="brand-name">Moru Doll</span>
-    </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto gap-1">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-        <li class="nav-item">
-          <a class="nav-link cart-btn" href="shop.html">
-            <i class="bi bi-bag-heart-fill"></i>
-            <span class="cart-count" id="cartCount">0</span>
-          </a>
-        </li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Evan Lukius</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header text-white text-center">
+    <div class="container">
+      <h1 class="fw-bold">Get In Touch</h1>
+      <p class="opacity-75">Open to opportunities in consulting, digital transformation & global business</p>
     </div>
   </div>
-</nav>
 
-<!-- PAGE HEADER -->
-<div class="page-header">
-  <div class="container text-center py-5">
-    <div class="section-tag">Get In Touch</div>
-    <h1 class="section-title mt-2">Contact <span class="highlight">Us 💌</span></h1>
-    <p class="section-sub">We'd love to hear from you — orders, questions, or just to say hi! 🐻</p>
-  </div>
-</div>
+  <!-- Contact Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-5 justify-content-center">
 
-<!-- CONTACT SECTION -->
-<section class="contact-section py-5">
-  <div class="container">
-    <div class="row g-4 justify-content-center mb-5">
-
-      <div class="col-md-4">
-        <a href="https://wa.me/6281717121267" target="_blank" class="contact-card">
-          <div class="contact-icon" style="background:#25D366;color:#fff;">
-            <i class="bi bi-whatsapp"></i>
-          </div>
-          <h6>WhatsApp</h6>
-          <p>0817-1712-1267</p>
-          <span class="contact-cta">Chat Now →</span>
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="https://www.instagram.com/morudolldotcom?igsh=MWlsZGo3MTB0YWVxYg==" target="_blank" class="contact-card">
-          <div class="contact-icon" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;">
-            <i class="bi bi-instagram"></i>
-          </div>
-          <h6>Instagram</h6>
-          <p>@morudolldot.com</p>
-          <span class="contact-cta">Follow Us →</span>
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="https://morudoll.com" target="_blank" class="contact-card">
-          <div class="contact-icon" style="background:var(--pink);color:#fff;">
-            <i class="bi bi-globe2"></i>
-          </div>
-          <h6>Website</h6>
-          <p>morudoll.com</p>
-          <span class="contact-cta">Visit →</span>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- INQUIRY FORM -->
-    <div class="row justify-content-center">
-      <div class="col-lg-7">
-        <div class="contact-form-card">
-          <div class="text-center mb-4">
-            <div class="section-tag">Send a Message</div>
-            <h3 class="section-title mt-2">Drop Us a <span class="highlight">Note 📝</span></h3>
-            <p class="section-sub">We'll get back to you as soon as possible!</p>
-          </div>
-          <form id="contactForm" onsubmit="submitForm(event)">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label fw-700">Your Name</label>
-                <input type="text" class="form-control moru-input" placeholder="e.g. Aulia" required />
-              </div>
-              <div class="col-md-6">
-                <label class="form-label fw-700">WhatsApp Number</label>
-                <input type="tel" class="form-control moru-input" placeholder="e.g. 08123456789" required />
-              </div>
-              <div class="col-12">
-                <label class="form-label fw-700">Subject</label>
-                <select class="form-select moru-input">
-                  <option value="">Select a topic...</option>
-                  <option>Product Order</option>
-                  <option>Workshop Booking</option>
-                  <option>Custom Order</option>
-                  <option>General Inquiry</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label class="form-label fw-700">Message</label>
-                <textarea class="form-control moru-input" rows="4" placeholder="Tell us what you need! 🌸" required></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-hero-primary w-100">
-                  <i class="bi bi-send-fill me-2"></i>Send via WhatsApp
-                </button>
+        <!-- Contact Info -->
+        <div class="col-lg-4">
+          <h3 class="fw-bold mb-4">Contact Info</h3>
+          <div class="contact-info-card p-4 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <p class="text-muted small mb-0">Email</p>
+                <a href="mailto:lukiusevanagustian@gmail.com" class="fw-semibold text-dark text-decoration-none">lukiusevanagustian@gmail.com</a>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="contact-info-card p-4 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <p class="text-muted small mb-0">Phone</p>
+                <a href="tel:+6282144750752" class="fw-semibold text-dark text-decoration-none">(+62) 821 4475 0752</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-card p-4 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+              <div>
+                <p class="text-muted small mb-0">LinkedIn</p>
+                <a href="https://linkedin.com/in/evanlukius" target="_blank" class="fw-semibold text-dark text-decoration-none">linkedin.com/in/evanlukius</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-card p-4 mb-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <p class="text-muted small mb-0">Location</p>
+                <span class="fw-semibold text-dark">Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h6 class="fw-bold text-muted mb-3">OPEN TO</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="open-to-tag">Consulting</span>
+              <span class="open-to-tag">Digital Transformation</span>
+              <span class="open-to-tag">Web Development</span>
+              <span class="open-to-tag">Cloud Projects</span>
+              <span class="open-to-tag">Global Business</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="py-5" style="background:var(--pink-pale);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <div class="section-tag">FAQ</div>
-      <h2 class="section-title">Frequently Asked <span class="highlight">Questions ❓</span></h2>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="accordion moru-accordion" id="faqAccordion">
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                🛍️ How do I place an order?
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                You can order directly through our <a href="shop.html">Shop page</a> and checkout via WhatsApp, or chat us directly at 0817-1712-1267.
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm p-4 p-md-5">
+            <h3 class="fw-bold mb-4">Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label fw-semibold">First Name</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="John" required />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label fw-semibold">Last Name</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="Doe" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Email Address</label>
+                  <input type="email" class="form-control form-control-lg" placeholder="john@example.com" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Subject</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="Project Inquiry" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Message</label>
+                  <textarea class="form-control form-control-lg" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold">
+                    <i class="bi bi-send-fill me-2"></i>Send Message
+                  </button>
+                </div>
               </div>
+            </form>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>Thanks for reaching out! I'll get back to you soon.
             </div>
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                📦 Do you ship outside Bandung?
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Yes! We ship nationwide across Indonesia. Shipping costs will be calculated based on your location.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                🎨 Can I request a custom order?
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Absolutely! We love custom orders. Chat us on WhatsApp with your ideas and we'll work something out together 🌸
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                🏠 How far in advance should I book the workshop?
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Please book at least 3 days (H-3) before your desired date so we can prepare everything for you!
-              </div>
-            </div>
-          </div>
-
         </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer-section">
-  <div class="container text-center py-4">
-    <div class="footer-brand"><img src="img/icon.png" alt="Moru Doll" class="footer-logo-img"> Moru Doll</div>
-    <p class="footer-tagline">Handmade with love from Bandung 🌸</p>
-    <div class="footer-links d-flex justify-content-center gap-4 flex-wrap">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="workshop.html">Workshop</a>
-      <a href="contact.html">Contact</a>
+  <!-- Footer -->
+  <footer class="footer py-4 text-center text-white">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Evan Agustian Lukius. All rights reserved.</p>
+      <small class="opacity-50">Built with Bootstrap 5</small>
     </div>
-    <div class="footer-copy mt-3">© 2025 Moru Doll. All rights reserved.</div>
-  </div>
-</footer>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
